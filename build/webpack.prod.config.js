@@ -60,7 +60,6 @@ export default merge(baseConf, {
         new webpack.LoaderOptionsPlugin({
             minimize: true
         }),
-        // 抽离公共js
         new webpack.optimize.CommonsChunkPlugin({
             name: 'vendor',
             filename: '[name].[hash:8].js',
